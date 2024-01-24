@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: whitesmoke;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgb(127, 181, 46);
+  min-height: 2cm;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  font-size: calc(20px + 2vmin);
+  color: black;
+}
+
+.heading {
+  margin: 0;
+  padding: 0 1cm;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: left;
+  padding: 0 1cm;
+  justify-content: flex-end;
+  height: 10%;
+  margin: 0;
+  transition: max-height 0.5s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.nav-links.active {
+  max-height: 30vh;
+}
+
+.nav-links li {
+  margin-right: 1cm;
+}
+
+.nav-links a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 0.5cm;
+  border-radius: 5px;
+}
+
+.nav-links a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hamburger-menu {
+  background: none;
+  border: none;
   color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-right: 1cm;
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(127, 181, 46);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .hamburger-menu {
+    display: block;
   }
 }

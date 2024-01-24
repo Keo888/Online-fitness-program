@@ -1,0 +1,43 @@
+.container {
+  background-image: url(/public/img/about.jpg);
+  padding: 100px;
+  margin-top: 50px;
+  border-radius: 8px;
+ }
+ 
+ h2 {
+  color: black;
+ }
+ 
+ .faq-item {
+  margin-bottom: 10px;
+ }
+ 
+ .question {
+  background-color: #444;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+ }
+ 
+ .question:hover {
+  background-color: #333;
+ }
+ 
+ .answer {
+  display: none;
+  color: rgb(121, 227, 121);
+  padding: 5px;
+  transition: max-height 0.3s;
+  overflow: hidden;
+ }
+ 
+ .visible {
+  display: block;
+ }
+
+ .faq-question{
+  color: rgb(89, 205, 89);
+ }

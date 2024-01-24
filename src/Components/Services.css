@@ -1,0 +1,59 @@
+.services-container {
+    background-size: cover;
+    background-position: center;
+    color: lightslategray;
+    padding: 40px 0;
+  }
+  
+
+  .service-package {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .service-package h3 {
+    color: whitesmoke;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .service-package ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .service-package li {
+    color: black;
+    padding: 5px 0;
+  }
+  
+  .service-package p {
+    margin-top: 10px;
+    color: black;
+    padding: 0 20px;
+  }
+  
+  .service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  details {
+    border: 2px solid #fff;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  details summary {
+    font-weight: bold;
+    color: black;
+  }

@@ -1,0 +1,36 @@
+
+.home {
+    color: black; 
+    background-image: url(/public/img/service.jpg);
+    padding: 50px 50px; 
+  }
+  
+  .container {
+    max-width: 500px; 
+    margin-left: auto;  }
+  
+  h1 {
+    color: black;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center; 
+  }
+  
+  p {
+    font-size: 25px;
+  }
+  
+  .navbar {
+    background-color: gray;
+    padding: 100px 0; 
+  }
+  
+  .navbar a {
+    color: #fff; 
+    margin: 0 15px;
+  }
+  
+  .navbar a:hover {
+    color: #ccc; 
+  }
+  

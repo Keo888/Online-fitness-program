@@ -1,0 +1,61 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #0077cc;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.brand {
+  color: black;
+  font-size: 1.5em;
+}
+
+.menu-toggle {
+  display: block;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-left: 5px; 
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 15px; 
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #0077cc;
+    width: 100%;
+    top: 60px; 
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
